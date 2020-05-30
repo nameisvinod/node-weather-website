@@ -29,7 +29,7 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About Page',
+        title: 'About',
         img: '/img/me.jpg',
         name: 'Alucardan'
     })
@@ -37,7 +37,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        title: 'Help page',
+        title: 'Help',
         helpText: 'Weather helper',
         name: 'Alucardan'
     })
@@ -81,7 +81,6 @@ app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
         name: 'Alucardan',
-        errormsg: 'Page Not Found',
         errorimg: '/img/404.jpg'
     })
 })
